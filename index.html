@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./js/menu.js"></script>
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+  <header>
+      <h1><img id="room-logo" src="./images/logo.svg" alt="room logo"/></h1>
+      <nav>
+        <img id="menu-hamburger" src="./images/icon-hamburger.svg" alt="icon hamburger"/>
+        <img id="menu-close" class="hide" src="./images/icon-close.svg" alt="icon close" />
+        <ul class="hide">
+          <li>home</li>
+          <li>shop</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="hero-slider-container">
+      <ul class="hero-slider-list">
+        <li>
+          <img id="hero-img-1" src="./images/mobile-image-hero-1.jpg" alt="something"/>
+          <div>
+            <h2>Discover innovative ways to decorate</h2>
+            <div>
+              We provide unmatched quality, comfort, and style for property owners across the country. 
+              Our experts combine form and function in bringing your vision to life. Create a room in your 
+              own style with our collection and make your property a reflection of you and what you love.
+            </div>
+            <button>Shop Now</button>
+          </div>
+        </li>
+        <li>
+          <h2>We are available all across the globe</h2>
+          <div>
+            With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+            Locally, we're in most major cities throughout the country. Find the branch nearest you using our 
+            store locator. Any questions? Don't hesitate to contact us today.
+          </div>
+        </li>
+        <li>
+          <h2>Manufactured with the best materials</h2>
+          <div>
+            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </div>
+        </li>
+      </ul>
+      <div class="slider">
+        <img id="slider-arrow-left" src="./images/icon-angle-left.svg" alt="arrow-left"/>
+        <img id="slider-arrow-right" src="./images/icon-angle-right.svg" alt="arrow-right"/>
+      </div>
+    </div>
+    <div>
+      <h3>About our furniture</h3>
+      <div>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </div>
+    </div>
+  </main>
+  <!-- Shop now button -->
+  <div id="background-overlay" class="hide"></div>
+</body>
+</html>
