@@ -18,7 +18,7 @@ body {
   background-color: hsla(0, 0%, 0%, .5);
 }
 
-#menu-hamburger:hover, #menu-close:hover, nav > ul > li:hover {
+#menu-hamburger:hover, #menu-close:hover, nav > ul > li:hover, li > div > button:hover {
   cursor: pointer;
 }
 
@@ -30,6 +30,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
+  z-index: 4;
 }
 
 h1 {
@@ -77,6 +78,83 @@ nav > ul > li {
   font-weight: 600;
 }
 
+.hero-slider-container {
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  top: 304px;
+}
+
+.slider > img {
+  background-color: hsl(0, 0%, 0%);
+  padding: 1rem;
+}
+
+.slider > img:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+
 #hero-img-1 {
   display: block;
+}
+
+.hero-div {
+  padding: 3rem 1.5rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-div > div {
+  margin-bottom: 1.5rem;
+  color: hsl(0, 0%, 63%);
+  line-height: 1.25rem;
+}
+
+.hero-div > button {
+  display: flex;
+  align-items: center;
+}
+
+.hero-div > button:hover {
+  color:hsl(0, 0%, 63%);
+}
+
+.hero-div > button:hover > svg > path {
+  fill: hsl(0, 0%, 63%);
+}
+
+.hero-div > button > span {
+  letter-spacing: .75rem;
+  text-transform: uppercase;
+}
+
+.shop-now-arrow {
+  width: 40px;
+  height: 12px;
+  margin-left: .5rem;
+}
+
+.about-div > div {
+  padding: 3rem 1.5rem;
+}
+
+.about-div > div > h3 {
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-div > div > div {
+  line-height: 1.25rem;
+  color: hsl(0, 0%, 63%);
 }
