@@ -82,7 +82,7 @@ nav > ul > li {
   display: block;
 }
 
-.img-div {
+.img-div, .hero-div {
   position: relative;
 }
 
@@ -211,8 +211,42 @@ h2 {
     width: 50%;
   }
 
-  #about-dark-img, #about-light-img {
-    
+  main {
+    display: grid;
+    grid-template-rows: auto 266px;
+    height: 100vh;
   }
 
+  .hero-slider-container, .hero-slider-list, .slider-item {
+    height: 100%;
+  }
+
+  .img-div {
+    width: 70%;
+  }
+
+  .hero-div {
+    width: 30%;
+  }
+
+  .slider.desktop {
+    right: initial;
+    left: 0;
+    margin-bottom: 0;
+  }
+
+  .about-div {
+    height: 266px;
+    display: flex;
+  }
+
+  #about-light-img, #about-dark-img {
+    width: 30%;
+    height: 266px;
+  }
+
+  .about-div > div {
+    height: 100%;
+    padding: 3rem 1.5rem;
+  }
 }
