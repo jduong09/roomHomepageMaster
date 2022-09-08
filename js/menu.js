@@ -20,4 +20,34 @@ document.addEventListener('DOMContentLoaded', () => {
     navElement.classList.remove('open');
     backgroundOverlay.classList.add('hide');
   });
+
+  if (window.innerWidth >= 922) {
+    menuHamburger.classList.add('hide');
+    menuClose.classList.add('hide');
+    menuList.classList.remove('hide');
+    navElement.classList.remove('open');
+    backgroundOverlay.classList.add('hide');
+  } else {
+    menuHamburger.classList.remove('hide');
+    menuClose.classList.add('hide');
+    menuList.classList.add('hide');
+    navElement.classList.remove('open');
+    backgroundOverlay.classList.add('hide');
+  }
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 922) {
+      menuHamburger.classList.add('hide');
+      menuClose.classList.add('hide');
+      menuList.classList.remove('hide');
+      navElement.classList.remove('open');
+      backgroundOverlay.classList.add('hide');
+    } else {
+      menuHamburger.classList.remove('hide');
+      menuClose.classList.add('hide');
+      menuList.classList.add('hide');
+      navElement.classList.remove('open');
+      backgroundOverlay.classList.add('hide');
+    }
+  });
 });

@@ -78,7 +78,11 @@ nav > ul > li {
   font-weight: 600;
 }
 
-.hero-slider-container {
+#hero-img-1, #hero-img-2, #hero-img-3 {
+  display: block;
+}
+
+.img-div {
   position: relative;
 }
 
@@ -87,7 +91,7 @@ nav > ul > li {
   display: flex;
   align-items: center;
   right: 0;
-  top: 304px;
+  bottom: 0;
 }
 
 .slider > img {
@@ -157,4 +161,58 @@ h2 {
 .about-div > div > div {
   line-height: 1.25rem;
   color: hsl(0, 0%, 63%);
+}
+
+@media (min-width: 376px) {
+  #hero-img-1 {
+    content: url('../images/desktop-image-hero-1.jpg');
+  }
+
+  #hero-img-2 {
+    content: url('../images/desktop-image-hero-2.jpg');
+  }
+
+  #hero-img-3 {
+    content: url('../images/desktop-image-hero-3.jpg');
+  }
+}
+
+@media (min-width: 922px) {
+  h1 {
+    order: 1;
+    margin: 0;
+  }
+
+  nav {
+    order: 2;
+    width: 40%;
+  }
+
+  #menu-hamburger, #menu-close {
+    display: none;
+  }
+
+  nav > ul {
+    display: flex;
+    margin-left: 2rem;
+    align-self: center;
+  }
+
+  nav > ul > li {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .slider-item {
+    display: flex;
+  }
+
+  .img-div, .hero-div {
+    width: 50%;
+  }
+
+  #about-dark-img, #about-light-img {
+    
+  }
+
 }
