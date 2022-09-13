@@ -222,11 +222,12 @@ h2 {
   }
 
   .img-div {
-    width: 70%;
+    width: 65%;
   }
 
   .hero-div {
-    width: 30%;
+    width: 35%;
+    padding: 4rem 2rem;
   }
 
   .slider.desktop {
@@ -248,5 +249,20 @@ h2 {
   .about-div > div {
     height: 100%;
     padding: 3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    margin-left: 2rem;
+    width: 30%;
+  }
+
+  .hero-div, .about-div > div {
+    padding: 5rem 2.5rem;
+  }
+
+  .about-div > div {
+    padding: 3rem;
   }
 }
